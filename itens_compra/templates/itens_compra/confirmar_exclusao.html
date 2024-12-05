@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Itens Compra - Lista</title>
+    </head>
+
+    <body>
+        <h1>Excluir Item de Compra</h1>
+        <p>Tem certeza que deseja excluir o item "{{ object.produto.nome }}" da compra #{{ object.compra.id }}?</p>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit">Sim</button>
+            <a href="{% url 'lista_itens_compra' %}">Não</a>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pagamento - Lista</title>
+    </head>
+
+    <body>
+        <h1>{% if object %}Editar Pagamento{% else %}Registrar Pagamento{% endif %}</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Salvar</button>
+        </form>
+        <a href="{% url 'lista_pagamentos' %}">Cancelar</a>
+    </body>
+</html>

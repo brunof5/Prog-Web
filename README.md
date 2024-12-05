@@ -69,23 +69,12 @@
 ``` bash
 meuprojeto/
 ├── manage.py
-├── meuprojeto/
+├── exposicao_venda/
 │   ├── __init__.py
 │   ├── settings.py
 │   ├── urls.py
 │   ├── wsgi.py
-│   ├── asgi.py
-│   └── templates/
-│       ├── base.html
-│       ├── cliente/
-│       │   └── perfil.html
-│       ├── fornecedor/
-│       │   └── produtos.html
-│       ├── produtos/
-│       │   ├── lista_produtos.html
-│       │   └── detalhe_produto.html
-│       └── compras/
-│           └── carrinho.html
+│   └── asgi.py
 ├── cliente/
 │   ├── __init__.py
 │   ├── admin.py
@@ -93,7 +82,9 @@ meuprojeto/
 │   ├── models.py
 │   ├── views.py
 │   ├── urls.py
-│   └── forms.py
+│   ├── forms.py
+|   └── templates/
+|       └── perfil.html
 ├── fornecedor/
 │   ├── __init__.py
 │   ├── admin.py
@@ -101,7 +92,9 @@ meuprojeto/
 │   ├── models.py
 │   ├── views.py
 │   ├── urls.py
-│   └── forms.py
+│   ├── forms.py
+|   └── templates/
+|       └── produtos.html
 ├── produtos/
 │   ├── __init__.py
 │   ├── admin.py
@@ -109,7 +102,10 @@ meuprojeto/
 │   ├── models.py
 │   ├── views.py
 │   ├── urls.py
-│   └── forms.py
+│   ├── forms.py
+|   └── templates/
+|       ├── lista_produtos.html
+│       └── detalhe_produto.html
 ├── compras/
 │   ├── __init__.py
 │   ├── admin.py
@@ -117,7 +113,9 @@ meuprojeto/
 │   ├── models.py
 │   ├── views.py
 │   ├── urls.py
-│   └── forms.py
+│   ├── forms.py
+|   └── templates/
+|       └── carrinho.html
 └── static/
     ├── css/
     ├── js/

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário Produtos</title>
+    </head>
+
+    <body>
+        <h1>{% if object %}Editar Produto{% else %}Novo Produto{% endif %}</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Salvar</button>
+        </form>
+        <a href="{% url 'lista_produtos' %}">Cancelar</a>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="tf-8">
+        <title>Compras - Lista</title>
+    </head>
+
+    <body>
+        <h1>Lista de Compras</h1>
+        <a href="{% url 'nova_compra' %}">Nova Compra</a>
+        <ul>
+            {% for compra in compras %}
+                <li>
+                    Compra #{{ compra.id }} - {{ compra.cliente.user.username }} - R$ {{ compra.valor_total }} - {{ compra.status }}
+                    <a href="{% url 'editar_compra' compra.id %}">Editar</a>
+                    <a href="{% url 'excluir_compra' compra.id %}">Excluir</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Itens Compra - Lista</title>
+    </head>
+
+    <body>
+        <h1>{% if object %}Editar Item de Compra{% else %}Novo Item de Compra{% endif %}</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Salvar</button>
+        </form>
+        <a href="{% url 'lista_itens_compra' %}">Cancelar</a>
+    </body>
+</html>
