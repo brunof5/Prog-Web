@@ -83,8 +83,8 @@ meuprojeto/
 │   ├── views.py
 │   ├── urls.py
 │   ├── forms.py
-|   └── templates/
-|       └── perfil.html
+│   └── templates/
+│       └── perfil.html
 ├── fornecedor/
 │   ├── __init__.py
 │   ├── admin.py
@@ -93,8 +93,8 @@ meuprojeto/
 │   ├── views.py
 │   ├── urls.py
 │   ├── forms.py
-|   └── templates/
-|       └── produtos.html
+│   └── templates/
+│       └── produtos.html
 ├── produtos/
 │   ├── __init__.py
 │   ├── admin.py
@@ -103,8 +103,8 @@ meuprojeto/
 │   ├── views.py
 │   ├── urls.py
 │   ├── forms.py
-|   └── templates/
-|       ├── lista_produtos.html
+│   └── templates/
+│       ├── lista_produtos.html
 │       └── detalhe_produto.html
 ├── compras/
 │   ├── __init__.py
@@ -114,8 +114,8 @@ meuprojeto/
 │   ├── views.py
 │   ├── urls.py
 │   ├── forms.py
-|   └── templates/
-|       └── carrinho.html
+│   └── templates/
+│       └── carrinho.html
 └── static/
     ├── css/
     ├── js/
