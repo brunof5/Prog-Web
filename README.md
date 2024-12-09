@@ -91,6 +91,7 @@ meuprojeto/
 │   ├── views.py
 │   ├── urls.py
 <<<<<<< HEAD
+<<<<<<< HEAD
 │   ├── tests.py
 |   └── templates/
 |       └── cliente/
@@ -105,6 +106,11 @@ meuprojeto/
 │   └── templates/
 │       └── perfil.html
 >>>>>>> 2df6afff5b79fd107a846f3c554bb7251d0b7866
+=======
+│   ├── forms.py
+│   └── templates/
+│       └── perfil.html
+>>>>>>> 2df6afff5b79fd107a846f3c554bb7251d0b7866
 ├── fornecedor/
 │   ├── __init__.py
 │   ├── admin.py
@@ -113,8 +119,14 @@ meuprojeto/
 │   ├── views.py
 │   ├── urls.py
 <<<<<<< HEAD
+<<<<<<< HEAD
 │   ├── tests.py
 |   └── templates/
+=======
+│   ├── forms.py
+│   └── templates/
+│       └── produtos.html
+>>>>>>> 2df6afff5b79fd107a846f3c554bb7251d0b7866
 =======
 │   ├── forms.py
 │   └── templates/
@@ -128,9 +140,12 @@ meuprojeto/
 │   ├── views.py
 │   ├── urls.py
 <<<<<<< HEAD
+<<<<<<< HEAD
 │   ├── tests.py
 |   └── templates/
 =======
+=======
+>>>>>>> 2df6afff5b79fd107a846f3c554bb7251d0b7866
 │   ├── forms.py
 │   └── templates/
 │       ├── lista_produtos.html
@@ -143,6 +158,7 @@ meuprojeto/
 │   ├── models.py
 │   ├── views.py
 │   ├── urls.py
+<<<<<<< HEAD
 <<<<<<< HEAD
 │   ├── tests.py
 |   └── templates/
@@ -173,6 +189,8 @@ meuprojeto/
 |   └── images/
 └── README.md 
 =======
+=======
+>>>>>>> 2df6afff5b79fd107a846f3c554bb7251d0b7866
 │   ├── forms.py
 │   └── templates/
 │       └── carrinho.html
