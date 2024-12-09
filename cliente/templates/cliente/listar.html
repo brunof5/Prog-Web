@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Listar Clientes{% endblock %}
+
+{% block header %}<h1>Lista de Clientes</h1>{% endblock %}
+
+{% block content %}
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Email</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for cliente in clientes %}
+                <tr>
+                    <td>{{ cliente.id }}</td>
+                    <td>{{ cliente.nome }}</td>
+                    <td>{{ cliente.idade }}</td>
+                    <td>{{ cliente.email }}</td>
+                    <td>{{ cliente.telefone }}</td>
+                    <td>
+                        <a href="{% url 'cliente:perfil_cliente' cliente.id %}">Ver</a> |
+                        <a href="{% url 'cliente:atualizar_cliente' cliente.id %}">Editar</a> |
+                        <a href="{% url 'cliente:deletar_cliente' cliente.id %}">Deletar</a>
+                    </td>
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="6">Nenhum cliente encontrado.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{% url 'cliente:criar_cliente' %}">Adicionar Cliente</a><br>
+    <a href="{% url 'cliente:base_cliente' %}">Voltar</a>
+{% endblock %}

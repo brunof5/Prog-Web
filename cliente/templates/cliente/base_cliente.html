@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Exposição e Venda - Cliente{% endblock %}
+
+{% block header %}
+    <h1>Olá Cliente!</h1>
+    <p>Bem-vindo ao site de Exposição e Venda!</p>
+    <a href="{% url 'my_site:base_my_site' %}">PRINCIPAL</a>
+{% endblock %}
+
+{% block content %}
+    <div>
+        <h2>Operações</h2>
+        <a href="{% url 'cliente:listar_clientes' %}">Listar</a> | 
+        <a href="{% url 'cliente:criar_cliente' %}">Criar</a>
+    </div>
+{% endblock %}

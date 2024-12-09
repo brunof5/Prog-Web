@@ -6,4 +6,4 @@ class Fornecedor(models.Model):
     email = models.EmailField(unique=True)
 
     def __str__(self):
-        return self.nome
+        return f"Fornecedor #{self.id} - {self.nome}"

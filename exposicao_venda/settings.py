@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Apps do projeto
+    'my_site',
     'cliente',
     'fornecedor',
     'produtos',
@@ -61,7 +62,9 @@ ROOT_URLCONF = 'exposicao_venda.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'templates',  # Diretório global para templates compartilhados
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

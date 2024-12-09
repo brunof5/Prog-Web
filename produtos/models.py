@@ -10,4 +10,4 @@ class Produto(models.Model):
     disponivel = models.BooleanField(default=True)
 
     def __str__(self):
-        return self.nome
+        return f"Produto #{self.id} - {self.nome}"

@@ -17,4 +17,4 @@ class Pagamento(models.Model):
     ])
 
     def __str__(self):
-        return f"Pagamento da Compra #{self.compra.id} - {self.metodo}"
+        return f"Pagamento da Compra #{self.compra.id} - {self.metodo} - Status: {self.status}"

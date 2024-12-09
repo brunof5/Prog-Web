@@ -9,11 +9,14 @@
         string endereco
         string email
         string telefone
-        bool usuario
     }
-    
-    Usuario ||--|| Cliente: pertence_a
-    Usuario ||--|| Fornecedor: pertence_a
+
+    Fornecedor {
+        int id PK
+        string nome
+        string endereco
+        string email
+    }
 
     Produto {
         int id PK
@@ -26,13 +29,6 @@
     }
     
     Produto }|--|| Fornecedor: fornecido_por
-    
-    Fornecedor {
-        int id PK
-        string nome
-        string endereco
-        string email
-    }
 
     Compras {
         int id PK
@@ -43,7 +39,6 @@
     }
     
     Compras ||--|{ Cliente: feita_por
-    Compras }|--|| Pagamento: tem
     
     ItensCompra {
         int id PK
@@ -64,17 +59,30 @@
         string status
     }
 
+    Compras }|--|| Pagamento: tem
+
 ## Estrutura de Diretórios
 
 ``` bash
 meuprojeto/
 ├── manage.py
+├── db.sqlite3
 ├── exposicao_venda/
 │   ├── __init__.py
 │   ├── settings.py
 │   ├── urls.py
 │   ├── wsgi.py
 │   └── asgi.py
+├── my_site/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── views.py
+│   ├── urls.py
+│   ├── tests.py
+|   └── templates/
+|       └── base_my_site.html
 ├── cliente/
 │   ├── __init__.py
 │   ├── admin.py
@@ -82,9 +90,15 @@ meuprojeto/
 │   ├── models.py
 │   ├── views.py
 │   ├── urls.py
-│   ├── forms.py
+│   ├── tests.py
 |   └── templates/
-|       └── perfil.html
+|       └── cliente/
+|           └── atualizar.html
+|           └── base_cliente.html
+|           └── criar.html
+|           └── deletar.html
+|           └── listar.html
+|           └── perfil.html
 ├── fornecedor/
 │   ├── __init__.py
 │   ├── admin.py
@@ -92,9 +106,8 @@ meuprojeto/
 │   ├── models.py
 │   ├── views.py
 │   ├── urls.py
-│   ├── forms.py
+│   ├── tests.py
 |   └── templates/
-|       └── produtos.html
 ├── produtos/
 │   ├── __init__.py
 │   ├── admin.py
@@ -102,10 +115,8 @@ meuprojeto/
 │   ├── models.py
 │   ├── views.py
 │   ├── urls.py
-│   ├── forms.py
+│   ├── tests.py
 |   └── templates/
-|       ├── lista_produtos.html
-│       └── detalhe_produto.html
 ├── compras/
 │   ├── __init__.py
 │   ├── admin.py
@@ -113,11 +124,32 @@ meuprojeto/
 │   ├── models.py
 │   ├── views.py
 │   ├── urls.py
-│   ├── forms.py
+│   ├── tests.py
 |   └── templates/
-|       └── carrinho.html
-└── static/
-    ├── css/
-    ├── js/
-    └── images/
+├── itens_compra/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── views.py
+│   ├── urls.py
+│   ├── tests.py
+|   └── templates/
+├── pagamento/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── views.py
+│   ├── urls.py
+│   ├── tests.py
+|   └── templates/
+├── web (venv)
+├── templates/
+|   └── base.html
+├──  static/
+|   ├── css/
+|   ├── js/
+|   └── images/
+└── README.md 
 ```
