@@ -81,8 +81,8 @@ meuprojeto/
 │   ├── views.py
 │   ├── urls.py
 │   ├── tests.py
-|   └── templates/
-|       └── base_my_site.html
+│   └── templates/
+│       └── base_my_site.html
 ├── cliente/
 │   ├── __init__.py
 │   ├── admin.py
@@ -91,14 +91,14 @@ meuprojeto/
 │   ├── views.py
 │   ├── urls.py
 │   ├── tests.py
-|   └── templates/
-|       └── cliente/
-|           └── atualizar.html
-|           └── base_cliente.html
-|           └── criar.html
-|           └── deletar.html
-|           └── listar.html
-|           └── perfil.html
+│   └── templates/
+│       └── cliente/
+│           └── atualizar.html
+│           └── base_cliente.html
+│           └── criar.html
+│           └── deletar.html
+│           └── listar.html
+│           └── perfil.html
 ├── fornecedor/
 │   ├── __init__.py
 │   ├── admin.py
@@ -107,7 +107,7 @@ meuprojeto/
 │   ├── views.py
 │   ├── urls.py
 │   ├── tests.py
-|   └── templates/
+│   └── templates/
 ├── produtos/
 │   ├── __init__.py
 │   ├── admin.py
@@ -116,7 +116,7 @@ meuprojeto/
 │   ├── views.py
 │   ├── urls.py
 │   ├── tests.py
-|   └── templates/
+│   └── templates/
 ├── compras/
 │   ├── __init__.py
 │   ├── admin.py
@@ -125,7 +125,7 @@ meuprojeto/
 │   ├── views.py
 │   ├── urls.py
 │   ├── tests.py
-|   └── templates/
+│   └── templates/
 ├── itens_compra/
 │   ├── __init__.py
 │   ├── admin.py
@@ -134,7 +134,7 @@ meuprojeto/
 │   ├── views.py
 │   ├── urls.py
 │   ├── tests.py
-|   └── templates/
+│   └── templates/
 ├── pagamento/
 │   ├── __init__.py
 │   ├── admin.py
@@ -143,13 +143,13 @@ meuprojeto/
 │   ├── views.py
 │   ├── urls.py
 │   ├── tests.py
-|   └── templates/
+│   └── templates/
 ├── web (venv)
 ├── templates/
-|   └── base.html
+│   └── base.html
 ├──  static/
-|   ├── css/
-|   ├── js/
-|   └── images/
+│   ├── css/
+│   ├── js/
+│   └── images/
 └── README.md 
 ```
