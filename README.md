@@ -5,7 +5,7 @@
     Cliente {
         int id PK
         string nome
-        int idade
+        int idadezz
         string endereco
         string email
         string telefone
@@ -90,6 +90,7 @@ meuprojeto/
 │   ├── models.py
 │   ├── views.py
 │   ├── urls.py
+<<<<<<< HEAD
 │   ├── tests.py
 |   └── templates/
 |       └── cliente/
@@ -99,6 +100,11 @@ meuprojeto/
 |           └── deletar.html
 |           └── listar.html
 |           └── perfil.html
+=======
+│   ├── forms.py
+│   └── templates/
+│       └── perfil.html
+>>>>>>> 2df6afff5b79fd107a846f3c554bb7251d0b7866
 ├── fornecedor/
 │   ├── __init__.py
 │   ├── admin.py
@@ -106,8 +112,14 @@ meuprojeto/
 │   ├── models.py
 │   ├── views.py
 │   ├── urls.py
+<<<<<<< HEAD
 │   ├── tests.py
 |   └── templates/
+=======
+│   ├── forms.py
+│   └── templates/
+│       └── produtos.html
+>>>>>>> 2df6afff5b79fd107a846f3c554bb7251d0b7866
 ├── produtos/
 │   ├── __init__.py
 │   ├── admin.py
@@ -115,8 +127,15 @@ meuprojeto/
 │   ├── models.py
 │   ├── views.py
 │   ├── urls.py
+<<<<<<< HEAD
 │   ├── tests.py
 |   └── templates/
+=======
+│   ├── forms.py
+│   └── templates/
+│       ├── lista_produtos.html
+│       └── detalhe_produto.html
+>>>>>>> 2df6afff5b79fd107a846f3c554bb7251d0b7866
 ├── compras/
 │   ├── __init__.py
 │   ├── admin.py
@@ -124,6 +143,7 @@ meuprojeto/
 │   ├── models.py
 │   ├── views.py
 │   ├── urls.py
+<<<<<<< HEAD
 │   ├── tests.py
 |   └── templates/
 ├── itens_compra/
@@ -152,4 +172,13 @@ meuprojeto/
 |   ├── js/
 |   └── images/
 └── README.md 
+=======
+│   ├── forms.py
+│   └── templates/
+│       └── carrinho.html
+└── static/
+    ├── css/
+    ├── js/
+    └── images/
+>>>>>>> 2df6afff5b79fd107a846f3c554bb7251d0b7866
 ```
