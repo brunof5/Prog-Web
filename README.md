@@ -1,5 +1,12 @@
 # Prog-Web
 
+![Static Badge](https://img.shields.io/badge/GCC116_14A-UFLA-green)
+![Static Badge](https://img.shields.io/badge/2024%2F2-gray)
+
+Integrantes:
+* Bruno Crespo Ferreira - 202120489
+* Weverton Andrade Ferreira - 202020782
+
 ## Modelo do Banco de Dados
 
     Cliente {
