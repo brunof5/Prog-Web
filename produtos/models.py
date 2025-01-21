@@ -7,7 +7,7 @@ class Produto(models.Model):
     valor = models.FloatField()
     descricao = models.TextField()
     estoque = models.PositiveIntegerField()
-    disponivel = models.BooleanField(default=True)
+    disponivel = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"Produto #{self.id} - {self.nome}"
+        return self.nome

@@ -8,4 +8,4 @@ class Cliente(models.Model):
     telefone = models.CharField(max_length=20)
 
     def __str__(self):
-        return f"Cliente #{self.id} - {self.nome}"
+        return self.nome
